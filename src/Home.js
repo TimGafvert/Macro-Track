@@ -97,7 +97,7 @@ class Home extends Component {
             </div>
           </div>
 
-          <div className='searchContainer'>
+          <div className='titleButtons'>
           <button className='btn' onClick={this.resetDay}>Start New Day</button>
           <button className='btn' onClick={this.removeLastItem}>Undo</button>
           </div>

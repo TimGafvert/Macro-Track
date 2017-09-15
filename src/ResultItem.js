@@ -33,6 +33,7 @@ class ResultItem extends Component {
   }
 
   render() {
+    let badData = false
       let result = ''
       let macroNutrients = ''
       let caloriesValue = '', proteinValue = '', fatValue = '', carbsValue = ''
@@ -45,29 +46,39 @@ class ResultItem extends Component {
             return obj.nutrient_id == '208';
       })
       if (macroNutrients[0] === undefined){
-
+        badData = false
       } else {
         caloriesValue = macroNutrients[0].value
         macroNutrients = result.nutrients.filter(function( obj ) {
             return obj.nutrient_id == '205';
       })
+        if (macroNutrients[0] === undefined){
+          badData = false
+        }else{
         carbsValue = macroNutrients[0].value
         macroNutrients = result.nutrients.filter(function( obj ) {
             return obj.nutrient_id == '204';
       })
+      if (macroNutrients[0] === undefined){
+        badData = false
+      }else{
         fatValue = macroNutrients[0].value
         macroNutrients = result.nutrients.filter(function( obj ) {
             return obj.nutrient_id == '203';
       })
+      if (macroNutrients[0] === undefined){
+        badData = false
+      }else{
         proteinValue = macroNutrients[0].value
-
-
+}
+      }}
 
       }}
 
       //need to divide the 100g value by the serving size
-
+if (!badData){
           return (
+
             <div className="foodInfo">
 
               <div>
@@ -81,9 +92,9 @@ class ResultItem extends Component {
               <button className='btn' onClick={() => this.enterItem(proteinValue, fatValue, carbsValue, caloriesValue)}>Enter Item</button>
             </div>
           </div>
-          )
+        )
 
-  }
+  }}
 
 }
 export default ResultItem;

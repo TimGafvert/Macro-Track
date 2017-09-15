@@ -1,1 +1,2 @@
-USDA API KEY = 2tfyS0SOtiFEdchD5rL0rX7LWeK6PggxCUpccKDs
+Macro track
+Tracks your macro nutrients

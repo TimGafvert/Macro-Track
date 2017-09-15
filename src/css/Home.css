@@ -9,19 +9,25 @@
   flex-direction: column;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
+  background-image: url("../images/beigeBG.jpg");
+  background-repeat:repeat;
+  /*background-position: center center;*/
 
 }
-
+.titleButtons{
+  padding: 10px;
+}
 .logo{
   height: 100px;
   width: 400px;
+  border: 5px solid black;
 }
 .macrosContainer {
     padding: 0px;
     display: flex;
     flex-direction: row;
     margin: auto ;
-    border: 20px solid darkBlue;
+    border: 10px solid darkBlue;
 
 }
 .searchBox{
@@ -32,6 +38,7 @@
 
 .searchContainer{
 padding: 10px;
+margin-bottom: 500px;
 
 }
 .Results {
