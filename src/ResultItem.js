@@ -70,13 +70,17 @@ class ResultItem extends Component {
           return (
             <div className="foodInfo">
 
-              <div>{result.name}</div>
-              <div>Calories: {caloriesValue}</div>
-              <div>Protein: {proteinValue}</div>
-              <div>Fat: {fatValue}</div>
-              <div>Carbs: {carbsValue}</div>
+              <div>
+              <div className='foodName'>{result.name}</div>
+              <div className='macroFact'>Calories: {caloriesValue}</div>
+              <div className='macroFact'>Protein: {proteinValue}</div>
+              <div className='macroFact'>Fat: {fatValue}</div>
+              <div className='macroFact'>Carbs: {carbsValue}</div>
+            </div>
+            <div>
               <button className='btn' onClick={() => this.enterItem(proteinValue, fatValue, carbsValue, caloriesValue)}>Enter Item</button>
             </div>
+          </div>
           )
 
   }

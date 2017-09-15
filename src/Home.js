@@ -97,13 +97,14 @@ class Home extends Component {
             </div>
           </div>
 
-          <div>
+          <div className='searchContainer'>
           <button className='btn' onClick={this.resetDay}>Start New Day</button>
           <button className='btn' onClick={this.removeLastItem}>Undo</button>
+          </div>
           <div className='searchContainer'>
           <SearchContainer
           enterItem={this.enterItem}/>
-        </div>
+
         </div>
       </div>
     );

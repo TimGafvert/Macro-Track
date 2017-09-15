@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -16,16 +17,16 @@
   width: 400px;
 }
 .macrosContainer {
-    padding: 10px;
+    padding: 0px;
     display: flex;
     flex-direction: row;
     margin: auto ;
-    border: 5px solid darkBlue;
+    border: 20px solid darkBlue;
 
 }
 .searchBox{
   width: 200px;
-  height: 40px;
+  height: 30px;
   font-size: 20px;
 }
 
@@ -39,19 +40,31 @@ padding: 10px;
 }
 .proteinContainer {
   border: 5px solid orange;
-  width: 100px;
+  width: 120px;
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke: 2px black;
 }
 .fatContainer {
   border: 5px solid orange;
-  width: 100px;
+  width: 120px;
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke: 2px black;
 }
 .carbsContainer {
   border: 5px solid orange;
-  width: 100px;
+  width: 120px;
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke: 2px black;
 }
 .caloriesContainer {
   border: 5px solid orange;
-  width: 100px;
+  width: 120px;
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke: 2px black;
 }
 
 

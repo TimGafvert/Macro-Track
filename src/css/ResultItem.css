@@ -1,4 +1,22 @@
 .foodInfo {
-  border: 5px solid gray;
+  border: 5px solid black;
   width: 200px;
+  margin: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.foodName{
+  color: darkblue;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.macroFact{
+  font-size: 20px;
+  color: black;
+  -webkit-text-stroke: 1px black;
 }
