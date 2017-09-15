@@ -5,6 +5,7 @@ class ResultItem extends Component {
   constructor(props) {
     super(props)
     this.enterItem = this.enterItem.bind(this)
+    this.componentDidMount = this.componentDidMount.bind(this)
     this.state = {
     report: null,
     calories: '',
@@ -16,11 +17,10 @@ class ResultItem extends Component {
   enterItem(protein, fat, carbs, calories) {
 
     this.props.enterItem(protein, fat, carbs, calories)
-    console.log(this.state)
   }
 
 
-  componentWillMount(){
+  componentDidMount(){
 
         this.props.food.getNutrition()
                 .then(nutritionReport => {
@@ -41,11 +41,12 @@ class ResultItem extends Component {
       } else {
         result = this.state.report
 
-        // console.log(result.nutrients)
-        // console.log(result.nutrients[2].value)
         macroNutrients = result.nutrients.filter(function( obj ) {
             return obj.nutrient_id == '208';
       })
+      if (macroNutrients[0] === undefined){
+
+      } else {
         caloriesValue = macroNutrients[0].value
         macroNutrients = result.nutrients.filter(function( obj ) {
             return obj.nutrient_id == '205';
@@ -62,7 +63,8 @@ class ResultItem extends Component {
 
 
 
-      }
+      }}
+
       //need to divide the 100g value by the serving size
 
           return (
@@ -73,7 +75,7 @@ class ResultItem extends Component {
               <div>Protein: {proteinValue}</div>
               <div>Fat: {fatValue}</div>
               <div>Carbs: {carbsValue}</div>
-              <button onClick={() => this.enterItem(proteinValue, fatValue, carbsValue, caloriesValue)}>Enter Item</button>
+              <button className='btn' onClick={() => this.enterItem(proteinValue, fatValue, carbsValue, caloriesValue)}>Enter Item</button>
             </div>
           )
 

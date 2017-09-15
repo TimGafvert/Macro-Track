@@ -1,9 +1,7 @@
 .Home {
   text-align: center;
   padding: 10px;
-  border: 5px solid gray;
   margin: auto;
-  position: absolute;
   top:0;
   left: 0;
   right: 0;
@@ -13,21 +11,26 @@
 
 }
 
-
+.logo{
+  height: 100px;
+  width: 400px;
+}
 .macrosContainer {
-
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: auto ;
+    border: 5px solid darkBlue;
 
 }
-.SearchContainer{
-display: flex;
-flex-direction: row;
-margin: auto;
-justify-content: center;
-align-items: center;
-width: 100%;
+.searchBox{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.searchContainer{
+padding: 10px;
 
 }
 .Results {
@@ -35,62 +38,46 @@ width: 100%;
   justify-content: center;
 }
 .proteinContainer {
-  border: 5px solid gray;
+  border: 5px solid orange;
   width: 100px;
 }
 .fatContainer {
-  border: 5px solid gray;
+  border: 5px solid orange;
   width: 100px;
 }
 .carbsContainer {
-  border: 5px solid gray;
+  border: 5px solid orange;
   width: 100px;
 }
 .caloriesContainer {
-  border: 5px solid gray;
+  border: 5px solid orange;
   width: 100px;
 }
 
 
-
-
-
-
-/*list-style: none;
-margin: 0;
-display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
-
--webkit-flex-flow: row wrap;
-justify-content: flex-end;*/
-
-/*.macros a {
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px 20px 5px 20px;
   text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: white;
-}*/
+}
 
-
-/*@media all and (max-width: 600px) {
-  .Home {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
-  }
-
-  .Home a {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-
-
-  .Home li:last-of-type a {
-    border-bottom: none;
-  }
-}*/
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

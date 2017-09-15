@@ -40,7 +40,7 @@ class Results extends Component {
 
     return (
       <div>
-        <button onClick={this.onSearchAgain}>Back to Search</button>
+        <button className='btn' onClick={this.onSearchAgain}>Back to Search</button>
         <div className="Results">
           {results}
         </div>
