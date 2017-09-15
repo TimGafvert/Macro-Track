@@ -1,0 +1,96 @@
+.Home {
+  text-align: center;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: auto;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.macrosContainer {
+
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+}
+.SearchContainer{
+display: flex;
+flex-direction: row;
+margin: auto;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+}
+.Results {
+  display: flex;
+  justify-content: center;
+}
+.proteinContainer {
+  border: 5px solid gray;
+  width: 100px;
+}
+.fatContainer {
+  border: 5px solid gray;
+  width: 100px;
+}
+.carbsContainer {
+  border: 5px solid gray;
+  width: 100px;
+}
+.caloriesContainer {
+  border: 5px solid gray;
+  width: 100px;
+}
+
+
+
+
+
+
+/*list-style: none;
+margin: 0;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+
+-webkit-flex-flow: row wrap;
+justify-content: flex-end;*/
+
+/*.macros a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}*/
+
+
+/*@media all and (max-width: 600px) {
+  .Home {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .Home a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+
+  .Home li:last-of-type a {
+    border-bottom: none;
+  }
+}*/

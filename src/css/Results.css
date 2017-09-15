@@ -1,0 +1,16 @@
+.Results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Results_item {
+  width: 240px;
+}
+
+.Results_item_image {
+  height: 200px;
+}
+
+.Results_item_title {
+  white-space: wrap;
+}
